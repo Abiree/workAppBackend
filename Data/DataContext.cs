@@ -41,7 +41,7 @@ namespace Data
 
 
             builder.Entity<TaskTag>()
-       .HasKey(tt => new { tt.TaskId, tt.TagId });
+                .HasKey(tt => new { tt.TaskId, tt.TagId });
 
             builder.Entity<TaskTag>()
                 .HasOne(tt => tt.Task)

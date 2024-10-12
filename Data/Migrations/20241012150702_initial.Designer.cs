@@ -12,14 +12,15 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231015175157_InitializationProject")]
-    partial class InitializationProject
+    [Migration("20241012150702_initial")]
+    partial class initial
     {
+        /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.22")
+                .HasAnnotation("ProductVersion", "7.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -68,9 +69,9 @@ namespace Data.Migrations
                         {
                             Id = new Guid("1e3258cb-a9ae-4859-b483-9e0fd7489e13"),
                             BreakTime = new TimeSpan(0, 1, 0, 0, 0),
-                            Date = new DateTime(2023, 10, 15, 17, 51, 56, 715, DateTimeKind.Utc).AddTicks(2380),
-                            InTime = new DateTime(2023, 10, 15, 8, 30, 0, 0, DateTimeKind.Utc),
-                            OutTime = new DateTime(2023, 10, 15, 18, 30, 0, 0, DateTimeKind.Utc),
+                            Date = new DateTime(2024, 10, 12, 15, 7, 2, 241, DateTimeKind.Utc).AddTicks(8120),
+                            InTime = new DateTime(2024, 10, 12, 8, 30, 0, 0, DateTimeKind.Utc),
+                            OutTime = new DateTime(2024, 10, 12, 18, 30, 0, 0, DateTimeKind.Utc),
                             OverTime = new TimeSpan(0, 1, 0, 0, 0),
                             UserId = "1e2226cb-a0fd-4859-b483-9e0fd7489afb",
                             WorkTime = new TimeSpan(0, 9, 0, 0, 0),
@@ -80,9 +81,9 @@ namespace Data.Migrations
                         {
                             Id = new Guid("1e3258cb-a9ae-4859-b483-9e0fd7489adb"),
                             BreakTime = new TimeSpan(0, 1, 0, 0, 0),
-                            Date = new DateTime(2023, 10, 15, 17, 51, 56, 715, DateTimeKind.Utc).AddTicks(2398),
-                            InTime = new DateTime(2023, 10, 15, 8, 30, 0, 0, DateTimeKind.Utc),
-                            OutTime = new DateTime(2023, 10, 15, 17, 30, 0, 0, DateTimeKind.Utc),
+                            Date = new DateTime(2024, 10, 12, 15, 7, 2, 241, DateTimeKind.Utc).AddTicks(8130),
+                            InTime = new DateTime(2024, 10, 12, 8, 30, 0, 0, DateTimeKind.Utc),
+                            OutTime = new DateTime(2024, 10, 12, 17, 30, 0, 0, DateTimeKind.Utc),
                             OverTime = new TimeSpan(0, 0, 0, 0, 0),
                             UserId = "1e8356cb-a0fd-4859-b483-9e0fd7489afb",
                             WorkTime = new TimeSpan(0, 8, 0, 0, 0),
@@ -92,9 +93,9 @@ namespace Data.Migrations
                         {
                             Id = new Guid("1e3258cb-a9ae-4859-b483-9e0fd7489e15"),
                             BreakTime = new TimeSpan(0, 1, 0, 0, 0),
-                            Date = new DateTime(2023, 10, 15, 17, 51, 56, 715, DateTimeKind.Utc).AddTicks(2424),
-                            InTime = new DateTime(2023, 10, 15, 8, 30, 0, 0, DateTimeKind.Utc),
-                            OutTime = new DateTime(2023, 10, 15, 19, 30, 0, 0, DateTimeKind.Utc),
+                            Date = new DateTime(2024, 10, 12, 15, 7, 2, 241, DateTimeKind.Utc).AddTicks(8140),
+                            InTime = new DateTime(2024, 10, 12, 8, 30, 0, 0, DateTimeKind.Utc),
+                            OutTime = new DateTime(2024, 10, 12, 19, 30, 0, 0, DateTimeKind.Utc),
                             OverTime = new TimeSpan(0, 2, 0, 0, 0),
                             UserId = "1e8356cb-a0fd-3619-b483-9e0fd7489aaa",
                             WorkTime = new TimeSpan(0, 10, 0, 0, 0),
@@ -336,7 +337,7 @@ namespace Data.Migrations
                         new
                         {
                             Id = new Guid("2a5680ea-a0fd-4859-b483-9e0fd7489adb"),
-                            CreationDate = new DateTime(2023, 10, 15, 17, 51, 56, 715, DateTimeKind.Utc).AddTicks(4259),
+                            CreationDate = new DateTime(2024, 10, 12, 15, 7, 2, 241, DateTimeKind.Utc).AddTicks(8330),
                             Desc = "Description for Task 1",
                             EndTime = new DateTime(2023, 10, 11, 15, 0, 0, 0, DateTimeKind.Utc),
                             Name = "Task 1",
@@ -520,7 +521,7 @@ namespace Data.Migrations
                         {
                             Id = "1e2226cb-a0fd-4859-b483-9e0fd7489afb",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "96417191-ce08-4d7e-b1ed-fa1d5fe42072",
+                            ConcurrencyStamp = "80c22e26-fc54-4fe3-9d76-c5e870b1dd7a",
                             DateBirth = new DateTime(1999, 6, 3, 14, 30, 0, 0, DateTimeKind.Utc),
                             DesignationId = new Guid("1e8356cb-a0fd-4859-b483-9e0fd7489adb"),
                             Email = "abireghallabii@gmail.com",
@@ -530,9 +531,9 @@ namespace Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ABIREGHALLABII@GMAIL.COM",
                             NormalizedUserName = "ABIRE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJ1WuOOekqvwr/zBdqO6+St4CEB6S6OyC7bhPljKuAVxydEwcYKlRCtF0CiT6Xwkcg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMajUZ6HCD8RlP3o+lWHwb/3o0OdbtzIC/9fzhpbWCXyo/ItbTctbL14YKkTzdT0MQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ff2b0bc4-aab5-4a41-87d1-98ddb3589751",
+                            SecurityStamp = "99ac483a-2eb0-41fe-a725-561b7c7cbb21",
                             StartDay = new DateTime(2022, 9, 5, 8, 30, 0, 0, DateTimeKind.Utc),
                             TeamId = new Guid("1e8356cb-a0fd-4859-b483-9e0fd7489adb"),
                             TwoFactorEnabled = false,
@@ -542,7 +543,7 @@ namespace Data.Migrations
                         {
                             Id = "1e8356cb-a0fd-4859-b483-9e0fd7489afb",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "588086cc-04e6-4858-990e-b28b0222fa58",
+                            ConcurrencyStamp = "113ed34e-388d-4a50-a371-b0a7a6f0b355",
                             DateBirth = new DateTime(1999, 3, 13, 14, 30, 0, 0, DateTimeKind.Utc),
                             DesignationId = new Guid("1e8356cb-a0fd-4859-b483-9e0fd7489adb"),
                             Email = "henry@gmail.com",
@@ -552,9 +553,9 @@ namespace Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "HENRY@GMAIL.COM",
                             NormalizedUserName = "HENRY",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHyK8RWO42zsi2IrNOaweyiI1aQ04mVk/2XswpaV0UVabgwyXZQHSS+OMcbbwAjwfA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBYYdymCLjbFypcgeYOSqMUWW3iST/sIGzcNIuShrHjZAMqGL+ROeCWohVig2FJNwQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b7ab53f1-205d-470c-8882-6dfd7555d082",
+                            SecurityStamp = "ae6d1e13-ff87-467f-9be0-2bb69b25336d",
                             StartDay = new DateTime(2022, 9, 15, 8, 30, 0, 0, DateTimeKind.Utc),
                             TeamId = new Guid("1e8356cb-a0fd-4859-b483-9e0fd7489adb"),
                             TwoFactorEnabled = false,
@@ -564,7 +565,7 @@ namespace Data.Migrations
                         {
                             Id = "1e8356cb-a0fd-3619-b483-9e0fd7489aaa",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3b0dbdea-7dbe-4378-b5e4-1d4b6d6b2892",
+                            ConcurrencyStamp = "e2909f1b-0a8a-4323-94ec-63b19808e47d",
                             DateBirth = new DateTime(1999, 1, 3, 14, 30, 0, 0, DateTimeKind.Utc),
                             DesignationId = new Guid("1e8356cb-a0fd-4859-b253-9e0fd7489adb"),
                             Email = "jenny@gmail.com",
@@ -576,7 +577,7 @@ namespace Data.Migrations
                             NormalizedEmail = "JENNY@GMAIL.COM",
                             NormalizedUserName = "JENNY",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1b2ce34a-2afe-47fd-9718-8893425a06f7",
+                            SecurityStamp = "00267712-acf7-46a6-a57e-93e8d6082a59",
                             StartDay = new DateTime(2022, 2, 5, 8, 30, 0, 0, DateTimeKind.Utc),
                             TeamId = new Guid("1e8356cb-a0fd-4859-b483-9e0fd7489adb"),
                             TwoFactorEnabled = false,

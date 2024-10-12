@@ -11,10 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 //Connection to database
 var ConnectionStrings = builder.Configuration.GetConnectionString("sqlConnection");
 
-builder.Services.AddDbContext<DataContext>(Opt =>  Opt.UseNpgsql(ConnectionStrings,b=>b.MigrationsAssembly("Data")));
+builder.Services.AddDbContext<DataContext>(Opt => Opt.UseNpgsql(ConnectionStrings, b => b.MigrationsAssembly("Data")));
 
 // Add services to the container.
-builder.Services.AddAuthentication(); 
+builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
 builder.Services.RegisterConfigurationManager();
 //Configure JWT
